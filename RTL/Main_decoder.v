@@ -6,6 +6,7 @@ module Main_decoder(
     output          reg                                     Branch,
     output          reg                                     MemWrite,
     output          reg                                     MemToReg,
+    output          reg                                     Jump,
     output          reg                 [1:0]               ALUOp
 );
 
@@ -63,7 +64,7 @@ always @(*) begin
             ALUOp = 2'b00;
             Jump = 0;
         end
-        6'000010: begin
+        6'b000010: begin
             RegWrite = 0;
             RegDst = 0;
             ALUSrc = 0;

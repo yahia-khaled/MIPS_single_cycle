@@ -1,23 +1,18 @@
 module MIPS_control_unit #(parameter Data_MEM_DEPTH = 1024)(
-    input           wire        [5:0]                               opcode,
-    input           wire        [5:0]                               funct,
-    input           wire                                            Zero_flag,
-    output          reg                                             Jump,
-    output          reg                                             MemToReg,
-    output          reg         [2:0]                               ALUControl,
-    output          reg                                             RegWrite,
-    output          reg                                             ALUSrc,
-    output          reg                                             RegDst
+    input           wire        [5:0]                     opcode,
+    input           wire        [5:0]                     funct,
+    output          wire                                  MemToReg,
+    output          wire                                  MemWrite,
+    output          wire                                  Branch,
+    output          wire                                  Jump,
+    output          wire        [2:0]                     ALUControl,
+    output          wire                                  ALUSrc,
+    output          wire                                  RegDst,
+    output          wire                                  RegWrite
 );
 
 
 // output declaration of module Main_decoder
-reg RegWrite;
-reg RegDst;
-reg ALUSrc;
-reg Branch;
-reg MemWrite;
-reg MemToReg;
 wire [1:0] ALUOp;
 
 Main_decoder u_Main_decoder(
@@ -28,6 +23,7 @@ Main_decoder u_Main_decoder(
     .Branch   	(Branch    ),
     .MemWrite 	(MemWrite  ),
     .MemToReg 	(MemToReg  ),
+    .Jump 	(Jump  ),
     .ALUOp    	(ALUOp     )
 );
 

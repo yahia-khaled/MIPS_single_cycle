@@ -1,0 +1,310 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/questasim64_2021.1/examples
+T_opt
+!s110 1752500224
+Vg`jg;QkNd8GTYXoP55V[c2
+04 20 4 work MIPS_single_cycle_tb fast 0
+=1-8c8caab55e75-687507ff-33c-397c
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vALU
+Z2 !s110 1752500221
+!i10b 1
+!s100 9=b4jlChMnSM8J4K<F:Yf3
+IMncRH@H3KP5bhcNRDo?:k0
+Z3 dE:/Computer architecture course/Projects/MIPS_single_cycle/sim_files
+w1752497605
+8../RTL/ALU.v
+F../RTL/ALU.v
+!i122 30
+L0 1 43
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z6 !s108 1752500221.000000
+Z7 !s107 ./MIPS_single_cycle_tb.sv|../RTL/sign_extend.v|../RTL/Reg_file.v|../RTL/PC_reg.v|../RTL/mux.v|../RTL/MIPS_single_cycle.v|../RTL/MIPS_control_unit.v|../RTL/Main_decoder.v|../RTL/INST_MEM.v|../RTL/DATA_MEM.v|../RTL/ALU_decoder.v|../RTL/ALU.v|
+Z8 !s90 -reportprogress|300|-f|sourcefile.list|
+!i113 0
+Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@a@l@u
+vALU_decoder
+R2
+!i10b 1
+!s100 QlGC6N2BAPmZU?<^d13_A2
+IlPFmU?PTUDhR6g4^PUH``0
+R3
+w1752455641
+8../RTL/ALU_decoder.v
+F../RTL/ALU_decoder.v
+!i122 30
+L0 1 39
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@a@l@u_decoder
+vDATA_MEM
+R2
+!i10b 1
+!s100 647EnghRgAJN:zGPXkkY92
+IG@4ehF@TXLzP0HGmOYU8g3
+R3
+w1752500217
+8../RTL/DATA_MEM.v
+F../RTL/DATA_MEM.v
+!i122 30
+L0 1 26
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@d@a@t@a_@m@e@m
+vINST_MEM
+R2
+!i10b 1
+!s100 6^9Pd_CfTz=5LG:BQJT4o2
+I7N2hBKVzn8KV6k;8iQU5I0
+R3
+w1752498755
+8../RTL/INST_MEM.v
+F../RTL/INST_MEM.v
+!i122 30
+L0 1 18
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@i@n@s@t_@m@e@m
+vMain_decoder
+R2
+!i10b 1
+!s100 _laA9PJRA><OT@G:RO=Fe2
+I^B[jOgz<HdRMc0g@[dG]H2
+R3
+w1752497209
+8../RTL/Main_decoder.v
+F../RTL/Main_decoder.v
+!i122 30
+L0 1 92
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@main_decoder
+vMIPS_control_unit
+R2
+!i10b 1
+!s100 ^ha_O9?]]R3YRPfb7V;EV3
+I=0nXao`02:;M?`z_F3RSU0
+R3
+w1752493740
+8../RTL/MIPS_control_unit.v
+F../RTL/MIPS_control_unit.v
+!i122 30
+L0 1 40
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@m@i@p@s_control_unit
+vMIPS_single_cycle
+R2
+!i10b 1
+!s100 D:;;I7jdf^A`F6EY5nXol2
+Ij:IGN?h5?8g11AR@R6fMT0
+R3
+w1752497988
+8../RTL/MIPS_single_cycle.v
+F../RTL/MIPS_single_cycle.v
+!i122 30
+L0 1 200
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@m@i@p@s_single_cycle
+vMIPS_single_cycle_tb
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R2
+!i10b 1
+!s100 XfzlF?O7<aPX>79Xc<=KR0
+Iei[3UXiV1VP7meXTa>X5J1
+S1
+R3
+w1752498787
+8./MIPS_single_cycle_tb.sv
+F./MIPS_single_cycle_tb.sv
+!i122 30
+L0 1 44
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@m@i@p@s_single_cycle_tb
+vmux
+R2
+!i10b 1
+!s100 ARFi22W5>^:3E2M76bHeO2
+IR^Ez<]2F:DeMKl4WL4kXB2
+R3
+w1752497560
+8../RTL/mux.v
+F../RTL/mux.v
+!i122 30
+L0 1 11
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vPC_reg
+R2
+!i10b 1
+!s100 j=^]:;<_AbBO@ciI_RU:V3
+I_nZzGf2Odg3`MDg@>Z`Xg1
+R3
+w1752497703
+8../RTL/PC_reg.v
+F../RTL/PC_reg.v
+!i122 30
+L0 1 24
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@p@c_reg
+vReg_file
+R2
+!i10b 1
+!s100 PO5f4Ie1h^BTjn[;2<?::1
+I`LPA2nDXalEGnjzcOdQVP3
+R3
+w1752499347
+8../RTL/Reg_file.v
+F../RTL/Reg_file.v
+!i122 30
+L0 1 27
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+n@reg_file
+vsign_extend
+R2
+!i10b 1
+!s100 oTXlkFm`L<`Q:kO>M6ZW60
+IV`=4[6Gn3@^kn?TV22kUb1
+R3
+w1752453372
+8../RTL/sign_extend.v
+F../RTL/sign_extend.v
+!i122 30
+L0 1 10
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1

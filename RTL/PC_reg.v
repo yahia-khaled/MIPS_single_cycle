@@ -1,12 +1,12 @@
-module PC_reg #(parameter instr_MEM_width = 256) (
-    input       wire                                            clk,
-    input       wire                                            rst,
-    input       wire        [$clog2(instr_MEM_width)-1:0]       PC_next,
-    output      wire        [$clog2(instr_MEM_width)-1:0]       PC_out
+module PC_reg (
+    input       wire                     clk,
+    input       wire                     rst,
+    input       wire        [31:0]       PC_next,
+    output      wire        [31:0]       PC_out
 );
 
 
-reg        [$clog2(instr_MEM_width)-1:0]   PC;
+reg        [31:0]   PC;
 
 
 assign PC_out = PC;
