@@ -14,7 +14,7 @@ module Main_decoder(
 
 always @(*) begin
     case (opcode)
-        6'b000000: begin
+        6'b000000: begin : R_TYPE
             RegWrite = 1;
             RegDst = 1;
             ALUSrc = 0;
@@ -24,7 +24,7 @@ always @(*) begin
             ALUOp = 2'b10;
             Jump = 0;
         end 
-        6'b100011: begin
+        6'b100011: begin : load
             RegWrite = 1;
             RegDst = 0;
             ALUSrc = 1;
@@ -34,7 +34,7 @@ always @(*) begin
             ALUOp = 2'b00;
             Jump = 0;
         end
-        6'b101011: begin
+        6'b101011: begin  : store
             RegWrite = 0;
             RegDst = 0;
             ALUSrc = 1;
@@ -44,7 +44,7 @@ always @(*) begin
             ALUOp = 2'b00;
             Jump = 0;
         end
-        6'b000100: begin
+        6'b000100: begin  : beq
             RegWrite = 0;
             RegDst = 0;
             ALUSrc = 0;
@@ -54,7 +54,7 @@ always @(*) begin
             ALUOp = 2'b01;
             Jump = 0;
         end
-        6'b001000: begin
+        6'b001000: begin : addi
             RegWrite = 1;
             RegDst = 0;
             ALUSrc = 1;
@@ -64,7 +64,7 @@ always @(*) begin
             ALUOp = 2'b00;
             Jump = 0;
         end
-        6'b000010: begin
+        6'b000010: begin : jump
             RegWrite = 0;
             RegDst = 0;
             ALUSrc = 0;

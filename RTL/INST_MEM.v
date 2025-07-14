@@ -4,7 +4,7 @@ module INST_MEM #(parameter depth = 1024, width = 8) (
 );
 
 
-
+(* rom_style = "block" *)  // Force Vivado to infer Block RAM (BRAM)
 reg     [width-1:0]       MEM     [0:depth-1];
 
 integer i;

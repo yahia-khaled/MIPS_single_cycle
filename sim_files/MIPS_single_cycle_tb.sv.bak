@@ -38,4 +38,4 @@ initial begin
 end
 
 
-endmodulex
+endmodule
