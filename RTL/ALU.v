@@ -33,8 +33,8 @@ always @(*) begin
         3'b110: begin : Set_Less_than
             ALUResult = (OP_A < OP_B);
         end
-        3'b111: begin : XOR
-            ALUResult = OP_A ^ OP_B;
+        default: begin 
+            ALUResult = 0;
         end
     endcase
 

@@ -60,7 +60,7 @@ PC_reg u_PC_reg(
 mux #(
     .WIDTH 	(32))
 u_mux_PC_next(
-    .in0 	( mux_PC_Src_out ),
+    .in0 	(mux_PC_Src_out ),
     .in1 	(PC_jump  ),
     .sel 	(Jump),
     .out 	(PC_next  )
@@ -170,6 +170,8 @@ DATA_MEM #(
 u_DATA_MEM(
     .address  	(ALUResult   ),
     .WD            	(RDB             ),
+    .clk(clk),
+    .rst(rst),
     .WE            	(MemWrite             ),
     .RD            	(ReadData             )
 );

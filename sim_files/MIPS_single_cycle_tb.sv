@@ -36,9 +36,5 @@ initial begin
     $stop();
 end
 
-// final begin
-//     $display("ALU RESULT is : %0h\n",DUT.ALUResult);
-// end
-
 
 endmodule

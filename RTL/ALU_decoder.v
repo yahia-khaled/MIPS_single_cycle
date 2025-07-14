@@ -31,7 +31,7 @@ always @(*) begin
         end            
         default:
         begin
-            ALUControl = 3'b000;
+            ALUControl = 3'b111;
         end 
     endcase
 end
