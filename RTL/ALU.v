@@ -30,7 +30,7 @@ always @(*) begin
         3'b101: begin : OR NOT B
             ALUResult = OP_A | ~(OP_B);
         end
-        3'b110: begin : Less than
+        3'b110: begin : Set Less than
             ALUResult = (OP_A < OP_B);
         end
         3'b111: begin : XOR
