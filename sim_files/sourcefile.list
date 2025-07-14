@@ -1,2 +1,2 @@
 ../RTL/*.v
-./MIPS_single_cycle_tb.sv
+*.sv

@@ -1,12 +1,6 @@
 module MIPS_single_cycle_tb();
     
-
-// localparamter
-parameter   INST_MEM_DEPTH = 256;
-parameter   DATA_MEM_DEPTH = 1024;
-parameter   width          = 8;
-parameter   CLK_PERIOD     = 10;
-
+import MIPS_package :: *;
 
 // instatitaion of module
 MIPS_single_cycle #(.INST_MEM_DEPTH(INST_MEM_DEPTH),.DATA_MEM_DEPTH(DATA_MEM_DEPTH),.width(width)) DUT (.*);
