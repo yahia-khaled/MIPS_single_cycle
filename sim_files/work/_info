@@ -25,6 +25,17 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f MIXED_VERSIONS
 13
 !s112 1.1
@@ -34,10 +45,10 @@ R0
 cModel Technology
 Z1 dC:/questasim64_2021.1/examples
 T_opt
-!s110 1752530159
-Vh4DZ@3hdh7eU[KV>g[diQ3
+!s110 1752612820
+V0SlkR`h1hSfNjJGhHdl;H3
 Z2 04 20 4 work MIPS_single_cycle_tb fast 0
-=1-8c8caab55e75-68757cef-108-22dc
+=1-8c8caab55e75-6876bfd4-12-3338
 Z3 !s124 OEM100
 Z4 o-quiet -auto_acc_if_foreign -work work +acc
 Z5 tCvgOpt 0
@@ -55,22 +66,22 @@ n@_opt1
 R6
 R1
 vALU
-Z7 !s110 1752530154
+Z7 !s110 1752612817
 !i10b 1
-!s100 <UXJKGW<84D0hK1=]>hdg0
-I_:im=3@:Za9^3aM2[?0`Q2
+!s100 Y:f2c^kX2l9??RialAPhD0
+IY8FUnfQjNZdYTm?o`FUMQ0
 Z8 dE:/Computer architecture course/Projects/MIPS_single_cycle/sim_files
-w1752515604
+w1752612813
 8../RTL/ALU.v
 F../RTL/ALU.v
-!i122 52
-L0 1 43
+!i122 72
+L0 1 115
 Z9 VDg1SIo80bB@j0V0VzS_@n1
 Z10 OL;L;2021.1;73
 r1
 !s85 0
 31
-Z11 !s108 1752530154.000000
+Z11 !s108 1752612817.000000
 Z12 !s107 MIPS_single_cycle_tb.sv|MIPS_package.sv|../RTL/sign_extend.v|../RTL/Reg_file.v|../RTL/PC_reg.v|../RTL/mux.v|../RTL/MIPS_single_cycle.v|../RTL/MIPS_control_unit.v|../RTL/Main_decoder.v|../RTL/INST_MEM.v|../RTL/DATA_MEM.v|../RTL/ALU_decoder.v|../RTL/ALU.v|
 Z13 !s90 -reportprogress|300|-f|sourcefile.list|
 !i113 0
@@ -80,14 +91,14 @@ n@a@l@u
 vALU_decoder
 R7
 !i10b 1
-!s100 U9iQJ<Kj`7dVJnbi_Bd;Y3
-IF1lT`od4WhBJ3NFUn9=`i1
+!s100 nCobmZkmOoOXU3SOIjJ@91
+I@`=kbeVa2>`5CI_D:F]o=1
 R8
-w1752515692
+w1752610718
 8../RTL/ALU_decoder.v
 F../RTL/ALU_decoder.v
-!i122 52
-L0 1 39
+!i122 72
+L0 1 63
 R9
 R10
 r1
@@ -109,7 +120,7 @@ R8
 w1752520614
 8../RTL/DATA_MEM.v
 F../RTL/DATA_MEM.v
-!i122 52
+!i122 72
 L0 1 35
 R9
 R10
@@ -129,10 +140,10 @@ R7
 !s100 SVhD:odz89SD`9YCcUd313
 IA8]_6`m9ah5b]`XkQ]1z50
 R8
-w1752529729
+w1752533262
 8../RTL/INST_MEM.v
 F../RTL/INST_MEM.v
-!i122 52
+!i122 72
 L0 1 18
 R9
 R10
@@ -155,7 +166,7 @@ R8
 w1752526840
 8../RTL/Main_decoder.v
 F../RTL/Main_decoder.v
-!i122 52
+!i122 72
 L0 1 92
 R9
 R10
@@ -172,13 +183,13 @@ n@main_decoder
 vMIPS_control_unit
 R7
 !i10b 1
-!s100 ^ha_O9?]]R3YRPfb7V;EV3
-I=0nXao`02:;M?`z_F3RSU0
+!s100 :c2HM@mPcfE9]Ck5mVIW@0
+I0l?JgfD?]_Sd8bDPUN6bi3
 R8
-w1752493740
+w1752610552
 8../RTL/MIPS_control_unit.v
 F../RTL/MIPS_control_unit.v
-!i122 52
+!i122 72
 L0 1 40
 R9
 R10
@@ -203,7 +214,7 @@ R8
 w1752526437
 8MIPS_package.sv
 FMIPS_package.sv
-!i122 52
+!i122 72
 L0 1 0
 VTfi1n1`c[8g432o[ZXIM21
 R10
@@ -220,14 +231,14 @@ n@m@i@p@s_package
 vMIPS_single_cycle
 R7
 !i10b 1
-!s100 ehn29<bzz8JVeCjaDBX2d1
-If^6Pee@nT]^UWkj=NzNb<3
+!s100 _EDW]]kTGI6aD]f:`LLfI1
+IX@=fnO63@DY<N8:joUoFR1
 R8
-w1752520637
+w1752610342
 8../RTL/MIPS_single_cycle.v
 F../RTL/MIPS_single_cycle.v
-!i122 52
-L0 1 202
+!i122 72
+L0 1 205
 R9
 R10
 r1
@@ -249,10 +260,10 @@ R7
 I^6d1gG9WacA3FUSjR6Wo92
 S1
 R8
-w1752530148
+w1752532604
 8MIPS_single_cycle_tb.sv
 FMIPS_single_cycle_tb.sv
-!i122 52
+!i122 72
 L0 1 41
 R9
 R10
@@ -275,7 +286,7 @@ R8
 w1752497560
 8../RTL/mux.v
 F../RTL/mux.v
-!i122 52
+!i122 72
 L0 1 11
 R9
 R10
@@ -297,7 +308,7 @@ R8
 w1752497703
 8../RTL/PC_reg.v
 F../RTL/PC_reg.v
-!i122 52
+!i122 72
 L0 1 24
 R9
 R10
@@ -314,14 +325,14 @@ n@p@c_reg
 vReg_file
 R7
 !i10b 1
-!s100 PO5f4Ie1h^BTjn[;2<?::1
-I`LPA2nDXalEGnjzcOdQVP3
+!s100 =TadgA?`7gokfKnBll8fD1
+I`PACn8dN?RjRl=BzHi?GF2
 R8
-w1752499347
+w1752607061
 8../RTL/Reg_file.v
 F../RTL/Reg_file.v
-!i122 52
-L0 1 27
+!i122 72
+L0 1 33
 R9
 R10
 r1
@@ -343,7 +354,7 @@ R8
 w1752453372
 8../RTL/sign_extend.v
 F../RTL/sign_extend.v
-!i122 52
+!i122 72
 L0 1 10
 R9
 R10

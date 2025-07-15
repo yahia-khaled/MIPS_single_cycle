@@ -15,7 +15,7 @@ wire [31:0] PC_next;
 wire MemToReg;
 wire MemWrite;
 wire Branch;
-wire [2:0] ALUControl;
+wire [4:0] ALUControl;
 wire ALUSrc;
 wire RegDst;
 wire RegWrite;
@@ -95,6 +95,8 @@ Reg_file u_Reg_file(
     .Read_addr_B 	(instr[20:16]  ),
     .write_addr  	(WriteReg ),
     .WE          	(RegWrite ),
+    .clk          	(clk ),
+    .rst          	(rst ),
     .WD          	(Result          ),
     .RDA         	(RDA          ),
     .RDB         	(RDB          )
@@ -158,6 +160,7 @@ ALU ALU_inst(
     .OP_A 	(RDA  ),
     .OP_B 	(ALU_op_B  ),
     .ALUControl 	(ALUControl  ),
+    .shamt 	(instr[6 +: 5]  ),
     .ALUResult 	(ALUResult  ),
     .Zero 	(  Zero)
 );

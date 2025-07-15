@@ -1,31 +1,3 @@
-# do {.\run.do}
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 23:55:35 on Jul 14,2025
-# vlog -f sourcefile.list 
-# -- Compiling module ALU
-# -- Compiling module ALU_decoder
-# -- Compiling module DATA_MEM
-# -- Compiling module INST_MEM
-# -- Compiling module Main_decoder
-# -- Compiling module MIPS_control_unit
-# -- Compiling module MIPS_single_cycle
-# -- Compiling module mux
-# -- Compiling module PC_reg
-# -- Compiling module Reg_file
-# -- Compiling module sign_extend
-# -- Compiling package MIPS_package
-# -- Compiling module MIPS_single_cycle_tb
-# -- Importing package MIPS_package
-# 
-# Top level modules:
-# 	MIPS_single_cycle_tb
-# End time: 23:55:35 on Jul 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" work.MIPS_single_cycle_tb 
-# Start time: 23:55:35 on Jul 14,2025
-# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim-64
 # //  Version 2021.1 win64 Jan 19 2021
 # //
@@ -40,31 +12,100 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# Loading sv_std.std
-# Loading work.MIPS_package(fast)
-# Loading work.MIPS_single_cycle_tb(fast)
-# Loading work.MIPS_single_cycle(fast)
-# Loading work.PC_reg(fast)
-# Loading work.mux(fast)
-# Loading work.INST_MEM(fast)
-# Loading work.Reg_file(fast)
-# Loading work.MIPS_control_unit(fast)
-# Loading work.Main_decoder(fast)
-# Loading work.ALU_decoder(fast)
-# Loading work.sign_extend(fast)
-# Loading work.mux(fast__1)
-# Loading work.ALU(fast)
-# Loading work.DATA_MEM(fast)
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: yahia khaled  Hostname: YAHIA  ProcessID: 6224
-#           Attempting to use alternate WLF file "./wlftngtz8s".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftngtz8s
-# ALU RESULT is : x
-# 
-# ** Note: $stop    : MIPS_single_cycle_tb.sv(30)
-#    Time: 270 ns  Iteration: 1  Instance: /MIPS_single_cycle_tb
-# Break in Module MIPS_single_cycle_tb at MIPS_single_cycle_tb.sv line 30
-# Stopped at MIPS_single_cycle_tb.sv line 30
-# End time: 23:55:48 on Jul 14,2025, Elapsed time: 0:00:13
-# Errors: 0, Warnings: 2
+project open {E:/Computer architecture course/Projects/MIPS_single_cycle/sim_files/MIPS_single_cycle}
+# Loading project MIPS_single_cycle
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 22:19:23 on Jul 15,2025
+# vlog -reportprogress 300 -f sourcefile.list 
+# -- Compiling module ALU
+# -- Compiling module ALU_decoder
+# ** Error: (vlog-13069) ../RTL/ALU_decoder.v(24): near "=": syntax error, unexpected '=', expecting '('.
+# ** Error: ../RTL/DATA_MEM.v(12): (vlog-2730) Undefined variable: 'width'.
+# ** Error: ../RTL/DATA_MEM.v(12): (vlog-2730) Undefined variable: 'depth'.
+# ** Error: ../RTL/DATA_MEM.v(19): (vlog-2730) Undefined variable: 'clk'.
+# ** Error: ../RTL/DATA_MEM.v(20): (vlog-2730) Undefined variable: 'rst'.
+# ** Error: ../RTL/DATA_MEM.v(25): (vlog-2730) Undefined variable: 'WE'.
+# ** Error: ../RTL/DATA_MEM.v(27): (vlog-2730) Undefined variable: 'address'.
+# ** Error: ../RTL/DATA_MEM.v(27): (vlog-2730) Undefined variable: 'WD'.
+# -- Compiling module INST_MEM
+# -- Compiling module Main_decoder
+# -- Compiling module MIPS_control_unit
+# -- Compiling module MIPS_single_cycle
+# -- Compiling module mux
+# -- Compiling module PC_reg
+# -- Compiling module Reg_file
+# -- Compiling module sign_extend
+# -- Compiling package MIPS_package
+# -- Compiling module MIPS_single_cycle_tb
+# -- Importing package MIPS_package
+# End time: 22:19:23 on Jul 15,2025, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# ** Error: C:/questasim64_2021.1/win64/vlog failed.
+# Error in macro ./run.do line 2
+# C:/questasim64_2021.1/win64/vlog failed.
+#     while executing
+# "vlog -f sourcefile.list"
+ls
+# MIPS_package.sv
+# MIPS_single_cycle.cr.mti
+# MIPS_single_cycle.mpf
+# MIPS_single_cycle_tb.sv
+# MIPS_single_cycle_tb.sv.bak
+# Test1.mem
+# run.do
+# sourcefile.list
+# transcript
+# vsim.wlf
+# wlftngtz8s
+# work
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 22:19:31 on Jul 15,2025
+# vlog -reportprogress 300 -f sourcefile.list 
+# -- Compiling module ALU
+# -- Compiling module ALU_decoder
+# ** Error: (vlog-13069) ../RTL/ALU_decoder.v(24): near "=": syntax error, unexpected '=', expecting '('.
+# ** Error: ../RTL/DATA_MEM.v(12): (vlog-2730) Undefined variable: 'width'.
+# ** Error: ../RTL/DATA_MEM.v(12): (vlog-2730) Undefined variable: 'depth'.
+# ** Error: ../RTL/DATA_MEM.v(19): (vlog-2730) Undefined variable: 'clk'.
+# ** Error: ../RTL/DATA_MEM.v(20): (vlog-2730) Undefined variable: 'rst'.
+# ** Error: ../RTL/DATA_MEM.v(25): (vlog-2730) Undefined variable: 'WE'.
+# ** Error: ../RTL/DATA_MEM.v(27): (vlog-2730) Undefined variable: 'address'.
+# ** Error: ../RTL/DATA_MEM.v(27): (vlog-2730) Undefined variable: 'WD'.
+# -- Compiling module INST_MEM
+# -- Compiling module Main_decoder
+# -- Compiling module MIPS_control_unit
+# -- Compiling module MIPS_single_cycle
+# -- Compiling module mux
+# -- Compiling module PC_reg
+# -- Compiling module Reg_file
+# -- Compiling module sign_extend
+# -- Compiling package MIPS_package
+# -- Compiling module MIPS_single_cycle_tb
+# -- Importing package MIPS_package
+# End time: 22:19:31 on Jul 15,2025, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# ** Error: C:/questasim64_2021.1/win64/vlog failed.
+# Error in macro ./run.do line 2
+# C:/questasim64_2021.1/win64/vlog failed.
+#     while executing
+# "vlog -f sourcefile.list"
+ls
+# MIPS_package.sv
+# MIPS_single_cycle.cr.mti
+# MIPS_single_cycle.mpf
+# MIPS_single_cycle_tb.sv
+# MIPS_single_cycle_tb.sv.bak
+# Test1.mem
+# run.do
+# sourcefile.list
+# transcript
+# vsim.wlf
+# wlftngtz8s
+# work
+# Break key hit

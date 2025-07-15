@@ -5,7 +5,7 @@ module MIPS_control_unit #(parameter Data_MEM_DEPTH = 1024)(
     output          wire                                  MemWrite,
     output          wire                                  Branch,
     output          wire                                  Jump,
-    output          wire        [2:0]                     ALUControl,
+    output          wire        [4:0]                     ALUControl,
     output          wire                                  ALUSrc,
     output          wire                                  RegDst,
     output          wire                                  RegWrite
